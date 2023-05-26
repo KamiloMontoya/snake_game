@@ -13,6 +13,8 @@ Snake = function (containerGameHtml) {
     }
   }
 
+  that.handleMove = function () {}
+
   that.getItemsPosition = function () {
     return snakeItems.length ?
       snakeItems.map(
@@ -81,6 +83,7 @@ Snake = function (containerGameHtml) {
           }
 
         }
+        that.handleMove()
 
       }, duration)
     }
